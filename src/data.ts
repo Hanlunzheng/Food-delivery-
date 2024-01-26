@@ -13,7 +13,7 @@ export const featuredProducts: Products = [
   {
     id: 1,
     title: "Sicilian",
-    desc: "Ignite your taste buds with a fiery combination of spicy pepperoni, jalapeños, crushed red pepper flakes, and melted mozzarella cheese, delivering a kick with every bite.",
+    desc: "Rich, tender and juicy.  Our marbled, USDA Select Ribeye Steak* is served hot off the grill. Served with your choice of two sides.",
     img: "/temporary/p1.png",
     price: 24.9,
     options: [
@@ -205,7 +205,7 @@ export const burgers: Products = [
     id: 7,
     title: "Classic Beef Burger",
     desc: "Savor the timeless taste of a juicy beef patty topped with fresh lettuce, tomatoes, pickles, and our special burger sauce, all nestled in a soft sesame seed bun.",
-    img: "/temporary/b1.png",
+    img: "/temporary/p1.png",
     price: 12.9,
     options: [
       {

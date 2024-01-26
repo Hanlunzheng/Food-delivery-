@@ -6,7 +6,9 @@ const data = [
   {
     id: 1,
     title: "always fresh & always crispy & always hot",
-    image: "/slide1.png",
+    //image: "/slide1.png",
+    image:
+      "https://media.istockphoto.com/id/1335052543/photo/waitress-serving-food-to-a-group-of-customers-at-a-restaurant.jpg?s=612x612&w=0&k=20&c=cJGmAEOWeUw93TnVDJ2M1YjvG2RQkFFGoSmmagO22Tg=",
   },
   {
     id: 2,
@@ -23,14 +25,14 @@ const data = [
 const Slider = () => {
   const [curr, setCurr] = useState(0);
 
-  //   useEffect(() => {
-  //     const interval = setInterval(() => {
-  //       // Increment the current index in a cyclic manner
-  //       setCurr((prevIndex) => (prevIndex + 1) % data.length);
-  //     }, 2000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Increment the current index in a cyclic manner
+      setCurr((prevIndex) => (prevIndex + 1) % data.length);
+    }, 2000);
 
-  //     return () => clearInterval(interval);
-  //   }, []); // Empty dependency array ensures the effect runs only once on mount
+    return () => clearInterval(interval);
+  }, []); // Empty dependency array ensures the effect runs only once on mount
 
   return (
     <div className="flex flex-col h-[calc(100vh-6rem)]  md:h-[calc(100vh-9rem)] lg:flex-row">
